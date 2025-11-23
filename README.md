@@ -191,16 +191,17 @@ After completing these programs, you will understand:
 # Output
 
 ## Program 1: Basic Data Exploration
-======================================================================
-LAB PROGRAM 1: BASIC DATA EXPLORATION
-======================================================================
+---
+### LAB PROGRAM 1: BASIC DATA EXPLORATION
+---
 
 Loading employee dataset...
 Dataset loaded successfully!
 
-----------------------------------------------------------------------
-1. COMPLETE DATASET (Tabular Format)
-----------------------------------------------------------------------
+---
+### 1. COMPLETE DATASET (Tabular Format)
+---
+```
 Employee_ID                Name Department  Age  Salary  Experience_Years
        E001          Ryan Davis      Sales   30  107545                17
        E002          John Lopez         HR   43   59197                 9
@@ -211,9 +212,12 @@ Employee_ID                Name Department  Age  Salary  Experience_Years
        ...
        ...
        ...
-----------------------------------------------------------------------
-2. SUMMARY STATISTICS
-----------------------------------------------------------------------
+```
+
+---
+### 2. SUMMARY STATISTICS
+---
+```
               Age         Salary  Experience_Years
 count  250.000000     250.000000        250.000000
 mean    36.328000   86369.048000         12.096000
@@ -223,14 +227,16 @@ min     24.000000   54368.000000          2.000000
 50%     36.000000   85468.500000         13.000000
 75%     43.750000  100626.750000         17.000000
 max     49.000000  121726.000000         22.000000
+```
 
-----------------------------------------------------------------------
-3. ADDITIONAL DATASET INFORMATION
-----------------------------------------------------------------------
+---
+### 3. ADDITIONAL DATASET INFORMATION
+---
 Total number of records: 250
 Total number of columns: 6
 
 Data types:
+```
 Employee_ID         object
 Name                object
 Department          object
@@ -238,10 +244,12 @@ Age                  int64
 Salary               int64
 Experience_Years     int64
 dtype: object
+```
 
-----------------------------------------------------------------------
-4. DEPARTMENT-WISE ANALYSIS
-----------------------------------------------------------------------
+---
+### 4. DEPARTMENT-WISE ANALYSIS
+---
+```
             Avg Salary  Min Salary  Max Salary  Avg Age  Avg Experience  Employee Count
 Department
 Finance       86434.54       55051      118940    37.08           10.90              48
@@ -249,10 +257,11 @@ HR            86834.21       57237      119689    36.40           11.89         
 IT            85940.24       58784      117843    37.27           13.44              41
 Marketing     86230.97       54368      121726    36.45           12.20              64
 Sales         86337.70       60735      115936    34.36           12.25              44
+```
 
-----------------------------------------------------------------------
-5. COLUMN NAMES
-----------------------------------------------------------------------
+---
+### 5. COLUMN NAMES
+---
 Total Columns: 6
 
 1. Employee_ID
@@ -262,32 +271,33 @@ Total Columns: 6
 5. Salary
 6. Experience_Years
 
-----------------------------------------------------------------------
-6. KEY INSIGHTS
-----------------------------------------------------------------------
-• Average Salary: $86,369.05
-• Average Age: 36.3 years
-• Average Experience: 12.1 years
-• Highest Salary: $121,726
-• Lowest Salary: $54,368
-• Most common department: Marketing
+---
+### 6. KEY INSIGHTS
+---
+* Average Salary: $86,369.05
+* Average Age: 36.3 years
+* Average Experience: 12.1 years
+* Highest Salary: $121,726
+* Lowest Salary: $54,368
+* Most common department: Marketing
 
-======================================================================
+---
 ✓ Data Exploration Complete!
-======================================================================
+---
 
 ## Program 2: Four Types of Data Analytics
 
-======================================================================
-LAB PROGRAM 2: FOUR TYPES OF DATA ANALYTICS
-======================================================================
+---
+### LAB PROGRAM 2: FOUR TYPES OF DATA ANALYTICS
+---
 
 Loading sales dataset...
 Dataset loaded successfully!
 
-----------------------------------------------------------------------
-SAMPLE DATA (First 10 rows)
-----------------------------------------------------------------------
+---
+### SAMPLE DATA (First 10 rows)
+---
+```
 Month Product  Sales  Profit  Marketing_Spend  Customer_Count
   Jan  Laptop  32493    9747             3249             164
   Jan   Phone  25852    7755             2585             147
@@ -295,23 +305,27 @@ Month Product  Sales  Profit  Marketing_Spend  Customer_Count
   Feb  Laptop  37859   11357             3785             167
   Feb   Phone  27487    8246             2748             110
   ....
+```
 
-======================================================================
-1. DESCRIPTIVE ANALYTICS - What Happened?
-======================================================================
-• Total Sales: $1,688,456
-• Average Sales: $46,901.56
-• Total Profit: $506,522
-• Average Profit: $14,070.06
+---
+### 1. DESCRIPTIVE ANALYTICS - What Happened?
+---
+* Total Sales: $1,688,456
+* Average Sales: $46,901.56
+* Total Profit: $506,522
+* Average Profit: $14,070.06
 
 Product-wise Performance:
+```
          Total Sales  Avg Sales  Total Profit  Total Customers
 Product
 Laptop        573302   47775.17        171986             3026
 Phone         571147   47595.58        171340             2671
 Tablet        544007   45333.92        163196             2733
+```
 
 Monthly Sales Trend:
+```
 Month
 Apr    152459
 Aug    187066
@@ -321,80 +335,84 @@ Nov    195156
 Oct    152819
 Sep    151105
 Name: Sales, dtype: int64
+```
 
-======================================================================
-2. DIAGNOSTIC ANALYTICS - Why Did It Happen?
-======================================================================
+---
+### 2. DIAGNOSTIC ANALYTICS - Why Did It Happen?
+---
 Correlation Analysis:
+```
                  Sales  Profit  Marketing_Spend  Customer_Count
 Sales            1.000   1.000            1.000           0.889
 Profit           1.000   1.000            1.000           0.889
 Marketing_Spend  1.000   1.000            1.000           0.889
 Customer_Count   0.889   0.889            0.889           1.000
+```
 
 Key Correlation Findings:
-• Sales vs Profit correlation: 1.000
+* Sales vs Profit correlation: 1.000
   → Strong positive relationship
-• Sales vs Marketing Spend correlation: 1.000
+* Sales vs Marketing Spend correlation: 1.000
   → Marketing spend significantly impacts sales
-• Sales vs Customer Count correlation: 0.889
+* Sales vs Customer Count correlation: 0.889
   → More customers strongly correlate with higher sales
 
-======================================================================
-3. PREDICTIVE ANALYTICS - What Will Happen?
-======================================================================
+---
+### 3. PREDICTIVE ANALYTICS - What Will Happen?
+---
 Model R² Score: 1.000
 Model Accuracy: 100.0%
 
 Sales Forecast for Next 3 Months:
-• January (Next): $147,743
-• February (Next): $147,744
-• March (Next): $147,745
+* January (Next): $147,743
+* February (Next): $147,744
+* March (Next): $147,745
 
-======================================================================
-4. PRESCRIPTIVE ANALYTICS - What Should We Do?
-======================================================================
+---
+### 4. PRESCRIPTIVE ANALYTICS - What Should We Do?
+---
 Business Recommendations Based on Analysis:
 
 1. FOCUS ON TOP PERFORMER
-   • Laptop generates highest profit ($171,986)
-   • ACTION: Increase inventory and marketing for Laptop
+   * Laptop generates highest profit ($171,986)
+   * ACTION: Increase inventory and marketing for Laptop
 
 2. MARKETING OPTIMIZATION
-   • Current Marketing ROI: 900.1%
-   • ACTION: Marketing is performing well, maintain current strategy
+   * Current Marketing ROI: 900.1%
+   * ACTION: Marketing is performing well, maintain current strategy
 
 3. SEASONAL STRATEGY
-   • Best performing month: Nov
-   • Weakest month: Jan
-   • ACTION: Plan promotions and stock accordingly
+   * Best performing month: Nov
+   * Weakest month: Jan
+   * ACTION: Plan promotions and stock accordingly
 
 4. CUSTOMER ACQUISITION
-   • Average revenue per customer: $200.29
-   • ACTION: Invest in customer acquisition if cost < $60.09
-   • ACTION: Implement loyalty programs to increase repeat purchases
+   * Average revenue per customer: $200.29
+   * ACTION: Invest in customer acquisition if cost < $60.09
+   * ACTION: Implement loyalty programs to increase repeat purchases
 
 5. GROWTH STRATEGY
-   • Predicted sales show upward trend
-   • ACTION: Scale operations to meet forecasted demand
-   • ACTION: Hire additional staff for peak months
+   * Predicted sales show upward trend
+   * ACTION: Scale operations to meet forecasted demand
+   * ACTION: Hire additional staff for peak months
 
-======================================================================
+---
 ✓ Analytics Complete!
-======================================================================
+---
 
 ## Program 3: Data Visualization
 
 ![Program 3 Output](Figure_1.png)
 
-======================================================================
-LAB PROGRAM 3: DATA VISUALIZATION
-======================================================================
+---
+### LAB PROGRAM 3: DATA VISUALIZATION
+---
 
 Loading products dataset...
 Dataset loaded successfully!
 
 Sample Data:
+```
        Product_Name  Price    Category  Sales_Count
       Gaming Laptop   1299 Electronics            2
     Business Laptop    899 Electronics            3
@@ -406,6 +424,7 @@ Wireless Headphones    199 Accessories           14
   Bluetooth Speaker    149 Accessories           20
         Smart Watch    349 Electronics            8
     Fitness Tracker    129 Electronics           25
+```
 
 Creating visualizations...
 1. Bar Chart - Product Prices
@@ -416,43 +435,44 @@ Creating visualizations...
 
 Closing the plot window will continue the program...
 
-======================================================================
-STATISTICAL SUMMARY
-======================================================================
+---
+### STATISTICAL SUMMARY
+---
 
 Price Statistics:
-  • Average Price: $296.35
-  • Median Price: $154.00
-  • Price Range: $12 - $1299
+* Average Price: $296.35
+* Median Price: $154.00
+* Price Range: $12 - $1299
 
 Category Distribution:
-  • Accessories: 11 products (55.0%)
-  • Electronics: 9 products (45.0%)
+* Accessories: 11 products (55.0%)
+* Electronics: 9 products (45.0%)
 
 Sales Count Statistics:
-  • Average Sales Count: 51 units
-  • Median Sales Count: 20 units
-  • Total Units Sold: 1,023 units
-  • Best Seller: USB Cable (287 units)
+* Average Sales Count: 51 units
+* Median Sales Count: 20 units
+* Total Units Sold: 1,023 units
+* Best Seller: USB Cable (287 units)
 
-======================================================================
+---
 ✓ Visualization Program Complete!
-======================================================================
+---
 
 ## Program 4: Root Cause Analysis
 
 ![Program 4 Output](Figure_2.png)
 
-======================================================================
-LAB PROGRAM 4: ROOT CAUSE ANALYSIS
-======================================================================
+---
+### LAB PROGRAM 4: ROOT CAUSE ANALYSIS
+---
 
 Loading monthly performance dataset...
 Dataset loaded successfully!
 
-----------------------------------------------------------------------
-MONTHLY PERFORMANCE DATA
-----------------------------------------------------------------------
+---
+### MONTHLY PERFORMANCE DATA
+---
+```
     Month  Revenue  Customer_Satisfaction  Marketing_Budget  Returns  Support_Tickets
   January   147714                    8.2             17725       25               65
  February   154266                    8.6             18511       33               98
@@ -461,130 +481,52 @@ MONTHLY PERFORMANCE DATA
   October   121996                    7.7             14639       61              158
  November   191244                    8.2             22949       37              122
  December   189062                    8.6             22687       44              119
+```
 
-======================================================================
-1. PERFORMANCE DROP IDENTIFICATION
-======================================================================
+---
+### 1. PERFORMANCE DROP IDENTIFICATION
+---
 
 Revenue Changes (Month-over-Month):
-  February: +4.4% 📈 GROWTH
-  March: -1.5% 📉 DROP
-  April: +2.1% 📈 GROWTH
-  May: +6.5% 📈 GROWTH
-  June: +0.1% 📈 GROWTH
-  July: +1.4% 📈 GROWTH
-  August: +2.7% 📈 GROWTH
-  September: -24.1% 📉 DROP
-  October: -6.7% 📉 DROP
-  November: +56.8% 📈 GROWTH
-  December: -1.1% 📉 DROP
+* February: +4.4% 📈 GROWTH
+* March: -1.5% 📉 DROP
+* April: +2.1% 📈 GROWTH
+* May: +6.5% 📈 GROWTH
+* June: +0.1% 📈 GROWTH
+* July: +1.4% 📈 GROWTH
+* August: +2.7% 📈 GROWTH
+* September: -24.1% 📉 DROP
+* October: -6.7% 📉 DROP
+* November: +56.8% 📈 GROWTH
+* December: -1.1% 📉 DROP
 
 Customer Satisfaction Changes:
-  February: +0.4 points 📈 IMPROVEMENT
-  March: -0.1 points 📉 DROP
-  April: +0.2 points 📈 IMPROVEMENT
-  May: -0.3 points 📉 DROP
-  June: +0.6 points 📈 IMPROVEMENT
-  July: -0.6 points 📉 DROP
-  August: +0.6 points 📈 IMPROVEMENT
-  September: -1.5 points 📉 DROP
-  October: +0.2 points 📈 IMPROVEMENT
-  November: +0.5 points 📈 IMPROVEMENT
-  December: +0.4 points 📈 IMPROVEMENT
+* February: +0.4 points 📈 IMPROVEMENT
+* March: -0.1 points 📉 DROP
+* April: +0.2 points 📈 IMPROVEMENT
+* May: -0.3 points 📉 DROP
+* June: +0.6 points 📈 IMPROVEMENT
+* July: -0.6 points 📉 DROP
+* August: +0.6 points 📈 IMPROVEMENT
+* September: -1.5 points 📉 DROP
+* October: +0.2 points 📈 IMPROVEMENT
+* November: +0.5 points 📈 IMPROVEMENT
+* December: +0.4 points 📈 IMPROVEMENT
 
-⚠️  MONTHS WITH SIGNIFICANT PERFORMANCE DROPS:
-  • July
-  • September
-  • October
+⚠️ MONTHS WITH SIGNIFICANT PERFORMANCE DROPS:
+* July
+* September
+* October
 
-======================================================================
-2. ROOT CAUSE ANALYSIS
-======================================================================
+---
+### 2. ROOT CAUSE ANALYSIS
+---
 
 Correlation Analysis:
+```
                        Revenue  Customer_Satisfaction  Marketing_Budget  Returns  Support_Tickets
 Revenue                  1.000                  0.603             1.000   -0.548           -0.368
 Customer_Satisfaction    0.603                  1.000             0.603   -0.689           -0.644
 Marketing_Budget         1.000                  0.603             1.000   -0.548           -0.368
 Returns                 -0.548                 -0.689            -0.548    1.000            0.824
 Support_Tickets         -0.368                 -0.644            -0.368    0.824            1.000
-
-Key Correlation Findings:
-  • Revenue vs Customer Satisfaction: 0.603
-    → Moderate relationship
-  • Revenue vs Returns: -0.548
-    → Returns negatively impact revenue
-  • Satisfaction vs Support Tickets: -0.644
-    → More tickets reduce satisfaction
-
-Detailed Analysis of Problem Months:
-----------------------------------------------------------------------
-
-July:
-  Revenue: $167,767 (+1.4%)
-  Customer Satisfaction: 8.4/10 (-0.6)
-
-  Possible Root Causes:
-    ⚠️  High product returns: 43 (+19.4% from previous month)
-       → Suggests quality issues or unmet customer expectations
-
-September:
-  Revenue: $130,807 (-24.1%)
-  Customer Satisfaction: 7.5/10 (-1.5)
-
-  Possible Root Causes:
-    ⚠️  High product returns: 65 (+97.0% from previous month)
-       → Suggests quality issues or unmet customer expectations
-    ⚠️  High support tickets: 168 (+90.9% from previous month)
-       → Indicates customer service issues or product problems
-    ⚠️  Reduced marketing budget: $15,696 (-24.1%)
-       → Lower marketing spend may have reduced customer acquisition
-
-October:
-  Revenue: $121,996 (-6.7%)
-  Customer Satisfaction: 7.7/10 (+0.2)
-
-  Possible Root Causes:
-    ⚠️  High product returns: 61 (+-6.2% from previous month)
-       → Suggests quality issues or unmet customer expectations
-    ⚠️  High support tickets: 158 (+-6.0% from previous month)
-       → Indicates customer service issues or product problems
-    ⚠️  Reduced marketing budget: $14,639 (-6.7%)
-       → Lower marketing spend may have reduced customer acquisition
-
-======================================================================
-3. RECOMMENDATIONS
-======================================================================
-
-Based on the analysis, here are the recommended actions:
-
-1. QUALITY IMPROVEMENT
-   • Average returns: 42 units/month
-   • ACTION: Investigate products with high return rates
-   • ACTION: Implement better quality control measures
-
-2. CUSTOMER SUPPORT ENHANCEMENT
-   • Average support tickets: 106 tickets/month
-   • ACTION: Increase support staff during high-volume months
-   • ACTION: Create self-service resources to reduce ticket volume
-
-3. MARKETING OPTIMIZATION
-   • Best performing month: November ($22,949 marketing)
-   • ACTION: Maintain consistent marketing investment
-   • ACTION: Focus on high-ROI marketing channels
-
-4. PROACTIVE MONITORING
-   • ACTION: Set up real-time alerts for satisfaction drops
-   • ACTION: Monthly review of returns and support ticket trends
-   • ACTION: Customer feedback surveys to identify issues early
-
-======================================================================
-4. VISUALIZATIONS
-======================================================================
-
-Generating visualizations...
-✓ Visualizations created successfully!
-
-======================================================================
-✓ Root Cause Analysis Complete!
-======================================================================
