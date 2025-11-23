@@ -385,7 +385,7 @@ Business Recommendations Based on Analysis:
 
 ## Program 3: Data Visualization
 
-![Program 3 Output](figure_1.png)
+![Program 3 Output](Figure_1.png)
 
 ======================================================================
 LAB PROGRAM 3: DATA VISUALIZATION
@@ -441,7 +441,7 @@ Sales Count Statistics:
 
 ## Program 4: Root Cause Analysis
 
-![Program 4 Output](figure_2.png)
+![Program 4 Output](Figure_2.png)
 
 ======================================================================
 LAB PROGRAM 4: ROOT CAUSE ANALYSIS
